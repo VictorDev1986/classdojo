@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0B2B5A;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #1D3B70;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.progress {
+    width: 60%; /* Ajusta esto según el puntaje */
+    height: 100%;
+    background-color: #F7C948;
+}
+
+.monster {
+    width: 150px;
+    margin-bottom: 20px;
+}

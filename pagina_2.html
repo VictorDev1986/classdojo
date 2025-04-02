@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a Level</title>
+    <!-- Se vincula el archivo de estilos externo para pagina_2 -->
+    <link rel="stylesheet" href="css/pagina_2.css">
+</head>
+<body>
+    <h1>CHOOSE A LEVEL</h1>
+    <div class="levels">
+        <div class="level-card">
+            <img src="apple.png" alt="Level 1">
+            <h2>Level 1</h2>
+            <p>Word Match</p>
+        </div>
+        <div class="level-card">
+            <img src="people.png" alt="Level 2">
+            <h2>Level 2</h2>
+            <p>Say the Word</p>
+        </div>
+        <div class="level-card">
+            <img src="ball.png" alt="Level 3">
+            <h2>Level 3</h2>
+            <p>Complete the Sentence</p>
+        </div>
+        <!-- Nueva tarjeta para Level 4 -->
+        <div class="level-card">
+            <img src="new_image.png" alt="Level 4">
+            <h2>Level 4</h2>
+            <p>New Challenge</p>
+        </div>
+    </div>
+    <div class="back-button">
+        <a href="index.html" class="button">Go Back to Home</a>
+    </div>
+    <script>
+        document.querySelectorAll('.level-card').forEach(card => {
+            card.addEventListener('click', () => {
+                window.location.href = 'pagina_3.html';
+            });
+        });
+    </script>
+</body>
+</html>

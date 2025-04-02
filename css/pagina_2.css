@@ -1,0 +1,75 @@
+/* Estilos para la página pagina_2.html */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #B3E5FC;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    color: #0D47A1;
+    font-size: 2rem;
+}
+
+/* Contenedor para las tarjetas de nivel */
+.levels {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.level-card {
+    background: #FFFDE7;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.level-card img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.level-card h2 {
+    color: #0D47A1;
+    font-size: 1.5rem;
+    margin: 10px 0 5px;
+}
+
+.level-card p {
+    color: #1565C0;
+    font-size: 1rem;
+}
+
+/* Responsive: Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    .levels {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.button {
+    display: inline-block;
+    margin: 2rem;
+    padding: 10px 20px;
+    background-color: #3498db; /* Fondo azul */
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #2980b9; /* Fondo azul oscuro al hacer hover */
+}

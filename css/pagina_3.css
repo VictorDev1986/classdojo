@@ -1,0 +1,80 @@
+/* Estilos para la página pagina_3.html */
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #B3E5FC;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    color: #0D47A1;
+    font-size: 2rem;
+}
+
+/* Estilos para el contenedor de la oración */
+.sentence-box {
+    background: #FFFDE7;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.sentence-box p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0D47A1;
+    margin: 0;
+}
+
+.sentence-box img {
+    width: 60px;
+}
+
+/* Estilos para la barra de progreso */
+.progress-bar {
+    width: 80%;
+    max-width: 500px;
+    height: 20px;
+    background: #0D47A1;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 60%; /* Ajusta el ancho según el progreso */
+    background: #FFD700;
+    border-radius: 10px;
+}
+
+.star {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+}
+
+/* Responsive: Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    .sentence-box {
+        flex-direction: column;
+        text-align: center;
+    }
+    .sentence-box img {
+        margin-top: 10px;
+    }
+}
