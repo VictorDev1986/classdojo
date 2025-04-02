@@ -5,7 +5,7 @@ const traducciones = {
         placeholder: "Write your answer",
         submit: "Submit Answer",
         questions: [
-            { text: "I like to play with the ball.", image: "ball.png" },
+            { text: "I like to play with the ball.", image: "balon.jpg" },
             { text: "She loves singing in the rain.", image: "rain.png" },
             { text: "He enjoys reading books.", image: "book.png" }
         ],
