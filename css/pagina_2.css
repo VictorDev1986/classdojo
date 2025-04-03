@@ -61,8 +61,8 @@ p {
 }
 
 .level-card img {
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
@@ -112,11 +112,12 @@ p {
     .level-card {
         width: 90%;
         height: auto;
-        min-height: 200px;
+        min-height: 280px;
+        padding: 30px;
     }
     
     .level-card img {
-        width: 80px;
-        height: 80px;
+        width: 180px;
+        height: 180px;
     }
 }

@@ -181,14 +181,29 @@ p {
     }
     
     .character-card {
-        width: 90%;
+        width: 70%;
         height: auto;
         min-height: 220px;
     }
     
     .character-image {
-        width: 100px;
-        height: 100px;
+        width: 130px;
+        height: 130px;
+    }
+
+    .selected-character {
+        width: 70%;
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    .selected-character h3 {
+        font-size: 1.2rem;
+    }
+
+    #selected-display {
+        font-size: 1rem;
+        padding: 15px;
     }
 }
 
