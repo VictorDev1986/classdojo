@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Character</title>
+    <link rel="stylesheet" href="css/pagina_personajes.css">
+</head>
+<body>
+    <div id="app" class="fade-in">
+        <div class="container">
+            <header class="nav">
+                <h1>Choose Your Character</h1>
+            </header>
+            
+            <main class="slide-in">
+                <section class="character-select">
+                    <div class="character-grid">
+                        <div class="character-card" data-character="monster">
+                            <img src="img/imagen1.png" alt="Monster Character" class="character-image">
+                            <h2>Maestro Dogo</h2>
+                        </div>
+                        <div class="character-card" data-character="wizard">
+                            <img src="img/imagen2.png" alt="Wizard Character" class="character-image">
+                            <h2>Blake</h2>
+                        </div>
+                        <div class="character-card" data-character="knight">
+                            <img src="img/imagen3.png" alt="Knight Character" class="character-image">
+                            <h2>Stella</h2>
+                        </div>
+                        <div class="character-card" data-character="elf">
+                            <img src="img/imagen4.png" alt="Elf Character" class="character-image">
+                            <h2>Pip</h2>
+                        </div>
+                    </div>
+                    
+                    <div class="selected-character">
+                        <h3>Selected Character:</h3>
+                        <div id="selected-display">
+                            <p>No character selected</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="action-buttons">
+                    <a href="pagina_2.html" class="btn btn-secondary">Back</a>
+                    <a href="pagina_2.html" class="btn btn-primary" id="continue-btn" disabled>Continue</a>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="js/character-select.js"></script>
+</body>
+</html>
