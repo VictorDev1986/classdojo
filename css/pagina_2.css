@@ -107,17 +107,29 @@ p {
     .levels {
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        padding: 0 15px;
     }
     
     .level-card {
-        width: 90%;
+        width: 70%;
         height: auto;
-        min-height: 280px;
-        padding: 30px;
+        min-height: 220px;
+        padding: 20px;
+        margin: 10px auto;
     }
     
     .level-card img {
-        width: 180px;
-        height: 180px;
+        width: 130px;
+        height: 130px;
+    }
+
+    body {
+        padding: 20px;
+    }
+
+    .level-card h2 {
+        font-size: 1.2rem;
+        margin: 10px 0;
     }
 }
