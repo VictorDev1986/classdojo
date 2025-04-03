@@ -14,11 +14,16 @@ body {
 }
 
 h1 {
-    color: #E3F2FD;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin: 0;
-    /* Efecto de sombra suave */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #f1f1f0, #e0960b, #fd4603, #FF1493);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
 }
 
 /* Estilos para el contenedor de la oración */
