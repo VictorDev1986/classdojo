@@ -21,13 +21,13 @@
            
         </div>
         <div class="level-card">
-            <img src="ball.png" alt="Level 3">
+            <img src="img/listening.png" alt="Level 3">
             <h2>Level 3</h2>
             
         </div>
         <!-- Nueva tarjeta para Level 4 -->
         <div class="level-card">
-            <img src="new_image.png" alt="Level 4">
+            <img src="img/autocomplete.png" alt="Level 4">
             <h2>Level 4</h2>
             
         </div>
@@ -37,8 +37,23 @@
     </div>
     <script>
         document.querySelectorAll('.level-card').forEach(card => {
+            const level = card.querySelector('h2').textContent;
+            
             card.addEventListener('click', () => {
-                window.location.href = 'pagina_3.html';
+                switch(level) {
+                    case 'Level 1':
+                        window.location.href = 'reading_game.html';
+                        break;
+                    case 'Level 2':
+                        window.location.href = 'writing_game.html';
+                        break;
+                    case 'Level 3':
+                        window.location.href = 'listening_game.html';
+                        break;
+                    case 'Level 4':
+                        window.location.href = 'autocomplete_game.html';
+                        break;
+                }
             });
         });
     </script>

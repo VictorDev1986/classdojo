@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Game - Level 2</title>
+    <link rel="stylesheet" href="css/writing_game.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Writing Game - Level 2</h1>
+        <div class="game-info">
+            <p>Complete the missing words in the sentences!</p>
+            <div class="score-container">
+                <span>Score: <span id="score">0</span></span>
+            </div>
+        </div>
+        
+        <div class="game-board">
+            <div class="sentence-container">
+                <p id="current-sentence"></p>
+            </div>
+            <div class="context-container">
+                <div class="image-container">
+                    <img id="question-image" src="" alt="Question Image">
+                </div>
+                <div class="hint-container">
+                    <button id="show-hint" class="hint-btn">Show Hint</button>
+                    <div id="hint-text" class="hint-text"></div>
+                </div>
+            </div>
+            <div class="input-container">
+                <input type="text" id="user-answer" placeholder="Type your answer here...">
+            </div>
+            <div class="action-buttons">
+                <button id="submit-btn" class="button">Submit</button>
+            </div>
+            <div class="feedback-container" id="feedback"></div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <div class="navigation-buttons">
+            <button id="resetButton" class="button">Play Again</button>
+            <a href="pagina_2.html" class="back-button">Back to Levels</a>
+        </div>
+    </div>
+    <script src="js/writing_game.js"></script>
+</body>
+</html>

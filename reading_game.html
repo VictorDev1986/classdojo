@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading Game - Level 1</title>
+    <link rel="stylesheet" href="css/writing_game.css">
+    <style>
+        .options-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            padding: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            .options-container {
+                grid-template-columns: 1fr;
+                padding: 0 20px;
+            }
+        }
+
+        .option {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .navigation-buttons .button, .navigation-buttons .back-button {
+            flex: 1;
+            max-width: 150px;
+            margin: 0 5px;
+            background: #e0960b;
+            color: #1976D2;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+
+        .navigation-buttons .button:hover, .navigation-buttons .back-button:hover {
+            background: #c47d09;
+            transform: translateY(-2px);
+        }
+
+        .navigation-buttons .back-button {
+            background: #1976D2;
+            color: white;
+        }
+
+        .navigation-buttons .back-button:hover {
+            background: #155fb8;
+        }
+
+        @media (max-width: 768px) {
+            .options-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .option:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: scale(1.05);
+        }
+
+        .option img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 15px;
+        }
+
+        .option span {
+            color: #BBDEFB;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Reading Game - Level 1</h1>
+        <div class="game-info">
+            <p>Read the sentence and choose the correct image!</p>
+            <div class="score-container">
+                <span>Score: <span id="score">0</span></span>
+            </div>
+        </div>
+
+        <div class="game-board">
+            <div class="sentence-container" id="sentence"></div>
+            <div class="options-container" id="options"></div>
+        </div>
+
+        <div class="navigation-buttons">
+            <button id="resetButton" class="button">Play Again</button>
+            <a href="pagina_2.html" class="back-button">Back to Levels</a>
+        </div>
+    </div>
+    <script src="js/reading_game.js"></script>
+</body>
+</html>
