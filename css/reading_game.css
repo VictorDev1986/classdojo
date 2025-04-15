@@ -154,8 +154,8 @@ h1 {
 }
 
 .word-card {
-    width: 200px;
-    height: 100px;
+    width:100%;
+    max-width: 200px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     padding: 20px;
@@ -270,3 +270,4 @@ h1 {
     50% { transform: scale(0.9); }
     100% { transform: scale(1); }
 }
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Initialization</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+        }
+        #musicInit {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="musicInit"></div>
+    <script>
+        // Esperar a que el usuario interactúe con la página
+        document.addEventListener('click', () => {
+            // Iniciar la música
+            const audio = new Audio('../audio/jungle-ish-beat-for-video-games-314073.mp3');
+            audio.volume = 0.3;
+            audio.loop = true;
+            audio.play();
+        });
+    </script>
+</body>
+</html>

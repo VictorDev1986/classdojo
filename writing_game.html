@@ -4,7 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Writing Game - Level 2</title>
+    <iframe src="music_handler.html" style="display:none;" id="musicFrame"></iframe>
     <link rel="stylesheet" href="css/writing_game.css">
+    <style>
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        .navigation-buttons .button, .navigation-buttons .back-button {
+            flex: 1;
+            max-width: 150px;
+            margin: 0 5px;
+            background: #e0960b;
+            color: #1976D2;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+
+        .navigation-buttons .button:hover, .navigation-buttons .back-button:hover {
+            background: #c47d09;
+            transform: translateY(-2px);
+        }
+
+        .navigation-buttons .back-button {
+            background: #1976D2;
+            color: white;
+        }
+
+        .navigation-buttons .back-button:hover {
+            background: #155fb8;
+        }
+    </style>
 </head>
 <body>
     <div class="game-container">

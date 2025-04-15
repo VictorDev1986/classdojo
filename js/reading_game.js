@@ -8,12 +8,12 @@ document.addEventListener('DOMContentLoaded', () => {
             question: "What is sleeping?",
             options: [
                 {
-                    image: "img/cat_.png",
+                    image: "img/cat_sofa.png",
                     text: "The cat",
                     correct: true
                 },
                 {
-                    image: "img/the room.jpeg",
+                    image: "img/cat_room.png",
                     text: "the room",
                     correct: false
                 }
@@ -24,13 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
             question: "What is the boy doing?",
             options: [
                 {
-                    image: "images/reading/sun.png",
-                    text: "Shining",
+                    image: "img/bicycle.png",
+                    text: "bicycle",
                     correct: false
                 },
                 {
-                    image: "images/reading/rain.png",
-                    text: "Raining",
+                    image: "img/futbol.png",
+                    text: "soccer",
                     correct: true
                 }
             ]
@@ -40,12 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
             question: "What are the children doing?",
             options: [
                 {
-                    image: "images/reading/playing.png",
+                    image: "img/children playing.png",
                     text: "Playing",
                     correct: true
                 },
                 {
-                    image: "images/reading/sleeping.png",
+                    image: "img/reading_game.png",
                     text: "Sleeping",
                     correct: false
                 }

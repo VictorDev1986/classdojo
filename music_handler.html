@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Handler</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: transparent;
+        }
+        #musicContainer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="musicContainer">
+        <audio id="backgroundMusic" src="audio/jungle-ish-beat-for-video-games-314073.mp3" 
+               loop 
+               volume="0.3">
+        </audio>
+    </div>
+    <script>
+        // Crear un solo elemento de audio compartido
+        let audio = null;
+        
+        function initAudio() {
+            try {
+                if (!audio) {
+                    audio = new Audio('audio/jungle-ish-beat-for-video-games-314073.mp3');
+                    audio.volume = 0.3;
+                    audio.loop = true;
+                }
+                
+                // Intentar reproducir
+                audio.play().catch(error => {
+                    console.log('Error al reproducir:', error);
+                    // Si falla, intentar nuevamente cuando el usuario interactúe
+                    document.addEventListener('click', () => {
+                        audio.play().catch(error => {
+                            console.log('Error al reproducir:', error);
+                        });
+                    }, { once: true });
+                });
+            } catch (error) {
+                console.log('Error al inicializar audio:', error);
+            }
+        }
+
+        // Inicializar cuando la página cargue
+        window.addEventListener('load', initAudio);
+
+        // También intentar cuando el usuario interactúe
+        document.addEventListener('click', initAudio);
+
+        // Mantener la música al navegar
+        window.addEventListener('beforeunload', () => {
+            if (audio) {
+                audio.pause();
+            }
+        });
+
+        window.addEventListener('load', () => {
+            if (audio) {
+                audio.play().catch(error => {
+                    console.log('Error al reproducir:', error);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
