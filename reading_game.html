@@ -36,6 +36,81 @@
             border: 2px solid rgba(255, 255, 255, 0.2);
         }
 
+        /* Estilos para el modal */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .medal {
+            width: 300px;
+            height: 300px;
+            object-fit: contain;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .modal-content h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .modal-content p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .score-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .modal-content .score-container {
+            margin: 20px 0;
+            font-size: 24px;
+            color: #4CAF50;
+        }
+
+        .close-modal {
+            background: #2196F3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .close-modal:hover {
+            background: #155fb8;
+        }
+
         .navigation-buttons {
             display: flex;
             justify-content: space-between;
@@ -74,12 +149,6 @@
             background: #155fb8;
         }
 
-        @media (max-width: 768px) {
-            .options-container {
-                grid-template-columns: 1fr;
-            }
-        }
-
         .option:hover {
             background: rgba(255, 255, 255, 0.05);
             transform: scale(1.05);
@@ -95,6 +164,23 @@
         .option span {
             color: #BBDEFB;
             font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .options-container {
+                grid-template-columns: 1fr;
+            }
+
+            .modal-content {
+                padding: 20px;
+            }
+
+            .close-modal {
+                width: 90%;
+                max-width: 300px;
+                padding: 12px;
+                font-size: 16px;
+            }
         }
     </style>
 </head>
