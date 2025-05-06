@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassDojo - Listening Game</title>
+    <link rel="stylesheet" href="css/listening_game.css">
+    <link rel="stylesheet" href="css/medals.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <h1>ClassDojo</h1>
+    <div class="game-info">Listening Game</div>
+    <div class="score-container">
+        <span>Score: </span>
+        <span id="score">0</span>
+    </div>
+    <div class="game-board">
+        <div class="audio-container">
+            <button id="play-audio" class="audio-btn">
+                <i class="fas fa-play"></i>
+            </button>
+            <div id="audio-waveform"></div>
+            <div class="english-sentence" id="english-sentence"></div>
+            <div class="question-image" id="question-image"></div>
+        </div>
+        <div class="sentence-container">
+            <textarea id="user-answer" placeholder="Escribe la traducción en español..." rows="3"></textarea>
+        </div>
+        <div class="feedback-container" id="feedback"></div>
+        <div class="progress-container">
+            <div class="progress"></div>
+        </div>
+    </div>
+    <button id="submit-btn" class="submit-btn">Submit Answer</button>
+    <button id="resetButton" class="reset-btn">Restart Game</button>
+    <script src="js/listening_game.js"></script>
+</body>
+</html>
