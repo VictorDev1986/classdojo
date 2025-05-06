@@ -286,6 +286,89 @@ input:focus {
     box-shadow: 0 6px 8px rgba(0,0,0,0.4);
 }
 
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.medals-container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.medal {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.modal-content h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.modal-content .score-container {
+    margin: 20px 0;
+    font-size: 24px;
+    color: #4CAF50;
+}
+
+/* Close Button */
+.close-modal {
+    background: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.close-modal:hover {
+    background: #155fb8;
+}
+
 /* Media queries para dispositivos móviles */
 @media (max-width: 600px) {
     h1 {
@@ -327,5 +410,11 @@ input:focus {
 
     .navigation-buttons {
         gap: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 20px;
     }
 }

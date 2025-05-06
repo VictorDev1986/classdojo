@@ -93,10 +93,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Función para mostrar la puntuación final
     function showFinalScore() {
-        sentenceElement.textContent = '¡Felicidades! Has completado el juego!';
-        feedbackElement.textContent = `Tu puntuación final es: ${score} puntos`;
-        submitButton.disabled = true;
-        inputElement.disabled = true;
+        // Crear el modal
+        const modal = document.createElement('div');
+        modal.className = 'modal';
+        modal.innerHTML = `
+            <div class="modal-content">
+                <div class="medals-container">
+                    <img src="img/medalla.png" alt="Medal" class="medal">
+                    <img src="img/medalla.png" alt="Medal" class="medal">
+                </div>
+                <h2>¡Congratulations!</h2>
+                <p>You have completed the game!</p>
+                <div class="score-container">
+                    <span>Final Score: <span id="final-score">${score}</span></span>
+                </div>
+                <button class="close-modal">Close</button>
+            </div>
+        `;
+
+        // Agregar el modal al documento
+        document.body.appendChild(modal);
+
+        // Agregar evento para cerrar el modal
+        modal.querySelector('.close-modal').addEventListener('click', () => {
+            modal.remove();
+            // Redirigir a la página de niveles
+            window.location.href = 'pagina_2.html';
+        });
+
+        // Ocultar el contenido del juego
+        document.querySelector('.game-container').style.display = 'none';
     }
 
     // Event listeners
