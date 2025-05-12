@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Level 4 - Unir Palabras</title>
+    <iframe src="music_handler.html" style="display:none;" id="musicFrame"></iframe>
+    <link rel="stylesheet" href="css/pagina_2.css">
+    <link rel="stylesheet" href="css/autocomplete_game.css">
+</head>
+
+<body>
+    <h1>Level 4: Match the words</h1>
+    <div class="autocomplete-game">
+        <div class="instructions">
+            <p>Select the correct <b>English</b> translation for each <b>Spanish</b> word.
+            <div id="score" class="score-container">0</div>
+        </div>
+
+        <div class="feedback-message" id="feedback"></div>
+
+        <div class="matching-container" id="matching-container">
+            <!-- Las filas de palabras se generarán dinámicamente con JavaScript -->
+        </div>
+
+        <div class="game-controls">
+            <button class="button" id="checkBtn">Check</button>
+            <button class="button" id="restartBtn">Restart</button>
+            <div class="back-button">
+                <a href="pagina_2.html" class="button">Back to Levels</a>
+            </div>
+        </div>
+
+        <script src="js/autocomplete_game.js"></script>
+    </div>
+</body>
+
+</html>
