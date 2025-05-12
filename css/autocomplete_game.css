@@ -122,6 +122,22 @@ body h1 {
     margin-top: 20px;
 }
 
+.back-button a.button {
+    background: #1976D2;
+    color: #E3F2FD;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.back-button a.button:hover {
+    background: #1565C0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+}
+
 .modal {
     position: fixed;
     top: 0;

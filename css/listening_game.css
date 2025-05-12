@@ -51,6 +51,26 @@ h1 {
     gap: 30px;
 }
 
+/* Responsive design para .game-board */
+@media (max-width: 768px) {
+    .game-board {
+        padding: 20px;
+        max-width: 80%;
+        margin: 20px 0;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-board {
+        padding: 15px;
+        max-width: 95%;
+        margin: 10px 0;
+        gap: 15px;
+        border-radius: 10px;
+    }
+}
+
 /* Audio Container */
 .audio-container {
     display: flex;
