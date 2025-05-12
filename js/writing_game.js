@@ -8,28 +8,28 @@ document.addEventListener('DOMContentLoaded', () => {
             sentence: "The ___ is black.",
             answer: "cat",
             hint: "It's a small animal that says 'meow'",
-            image: "img/cat_game.png",
+            image: "img/cat_black.png",
             pronunciation: "cat"
         },
         {
             sentence: "I have a red ___.",
             answer: "ball",
             hint: "It's round and you can play with it",
-            image: "img/ball.png",
+            image: "img/ball_red.jpg",
             pronunciation: "ball"
         },
         {
             sentence: "The ___ is brown.",
             answer: "dog",
             hint: "It's a friendly pet that says 'woof'",
-            image: "img/dog.png",
+            image: "img/dog.jpg",
             pronunciation: "dog"
         },
         {
             sentence: "I like to eat red ___.",
             answer: "apple",
             hint: "It's a fruit that grows on trees",
-            image: "img/apple.png",
+            image: "img/red_apple.jpg",
             pronunciation: "apple"
         }
     ];

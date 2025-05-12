@@ -206,6 +206,54 @@ textarea:focus {
 }
 
 /* Modal */
+
+/* Estilos unificados para todos los botones principales */
+
+.action-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1.2rem 0 0.5rem 0;
+}
+
+.button {
+    display: inline-block;
+    margin: 0 0.3rem;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #311B92 0%, #4A148C 100%);
+    color: #E3F2FD;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+.button:hover {
+    background: linear-gradient(135deg, #281B73 0%, #370061 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.4);
+}
+.button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.back-button {
+    background: #1976D2 !important;
+    color: #fff !important;
+}
+
+.back-button:hover {
+    background: #155fb8 !important;
+    color: #fff !important;
+}
+
 .modal {
     position: fixed;
     top: 0;

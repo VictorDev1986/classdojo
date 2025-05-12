@@ -9,28 +9,28 @@ document.addEventListener('DOMContentLoaded', () => {
             english: "The cat is black",
             spanish: "El gato es negro",
             hint: "A sentence about a black cat",
-            image: "img/cat_game.png"
+            image: "img/cat_black.png"
         },
         {
             audio: "audio/sentence2.mp3",
             english: "I have a red ball",
             spanish: "Tengo una pelota roja",
             hint: "A sentence about a red ball",
-            image: "img/ball.png"
+            image: "img/ball_red.jpg"
         },
         {
             audio: "audio/sentence3.mp3",
             english: "The sun is yellow",
             spanish: "El sol es amarillo",
             hint: "A sentence about a yellow sun",
-            image: "img/sun.png"
+            image: "img/The_sun_is_yellow.jpg"
         },
         {
             audio: "audio/sentence4.mp3",
             english: "I like to eat red apples",
             spanish: "Me gusta comer manzanas rojas",
             hint: "A sentence about red apples",
-            image: "img/apple.png"
+            image: "img/red_apple.jpg"
         }
     ];
 
